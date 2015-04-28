@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes>
+    <!--Fixes and Navaids not defined yet-->
+    <addPoint code="RICAD" point="-23.0075, -43.036944444444444" />
+    <addPoint code="PATIN" point="-24.179166666666667, -44.01777777777777" />
+    <addPoint code="BONEL" point="-23.28611111111111, -43.255833333333335" />
+    <addPoint code="DONA" point="-22.05138888888889, -42.684999999999995" />
+    <addPoint code="ERCY" point="-22.06833333333333, -42.652499999999996" />
+    <addPoint code="POKA" point="-22.15138888888889, -42.55166666666666" />
+    <addPoint code="AGUA" point="-23.084444444444443, -42.28361111111111" />
+    <addPoint code="CANO" point="-23.116944444444446, -44.43333333333333" />
+    <addPoint code="GEDS" point="-23.051111111111112, -44.16777777777777" />
+    <addPoint code="TIBA" point="-24.2, -44.43472222222222" />
+    <addPoint code="PAKU" point="-23.168333333333333, -43.68583333333333" />
+    <addPoint code="ATUM" point="-23.66722222222222, -43.88388888888889" />
+    <addPoint code="BOTE" point="-23.452222222222222, -43.651666666666664" />
+    <addPoint code="BUPI" point="-23.285833333333336, -43.66916666666666" />
+    <addPoint code="ONIR" point="-23.069166666666667, -43.85194444444445" />
+    <addPoint code="JUDY" point="-23.066944444444445, -43.651944444444446" />
+    <addPoint code="RIOH" point="-21.766666666666665, -43.88444444444444" />
+    <addPoint code="MARO" point="-22.302222222222223, -43.58444444444444" />
+    <addPoint code="AIZA" point="-22.485833333333335, -43.48416666666667" />
+    <addPoint code="TIGO" point="-22.618333333333332, -43.416666666666664" />
+    <!--Screen Text-->
+    <route name="screentext">
+        <screenText screenPos="-50,50" text="All holds at 230 knots maximum" fontSize="20" font="Arial" />
+    </route>
+    <!--Taxiways/Holding Points-->
+    <route name="SBRJ taxiways" zoomMax="12" displayMode="optional" color="160,160,80">
+        <multiPointLine close="false">
+            <point>-22.907760,-43.165804</point>
+            <point>-22.905495,-43.16594578</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.90487,-43.16535</point>
+            <point>-22.904788,-43.163833</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.907760,-43.165804</point>
+            <point>-22.913205,-43.165418</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.913785,-43.164834</point>
+            <point>-22.913718,-43.163487</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.908055,-43.165240</point>
+            <point>-22.907985,-43.163719</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.913164,-43.165420</point>
+            <point>-22.914413,-43.165199</point>
+        </multiPointLine>
+        <multiPointLine>
+            <point>-22.915182,-43.164288</point>
+            <point>-22.915762,-43.163411</point>
+        </multiPointLine>
+        <text position="-22.915267,-43.164351" text="D" fontSize="25" />
+        <curve start="-22.914413,-43.165199" end="-22.915182,-43.164288" controlPoint="-22.914570,-43.165132" />
+        <curve start="-22.913205,-43.165418" end="-22.913785,-43.164834" controlPoint="-22.913820,-43.165370" />
+        <curve start="-22.908457,-43.165754" end="-22.908055,-43.165240" controlPoint="-22.908097,-43.165757" />
+        <curve start="-22.907760,-43.165804" end="-22.908055,-43.165240" controlPoint="-22.908097,-43.165757" />
+        <text position="-22.905485,-43.165944" text="A" angle="355" fontSize="25" zoomMax="1.6" zoomMin="0.1"/>
+        <curve start="-22.905495,-43.16594578" end="-22.90487,-43.16535" controlPoint="-22.904920,-43.165983" />
+        <text position="-22.908089,-43.164633" text="B" angle="355" fontSize="25" zoomMax="1.6" zoomMin="0.1" />
+        <text position="-22.913803,-43.164340" text="C" angle="355" fontSize="25" zoomMax="1.6" zoomMin="0.1" />
+        <text position="-22.909151,-43.165639" text="J" angle="355" fontSize="25" zoomMax="1.6" zoomMin="0.1" />
+        <text position="-22.912449,-43.165426" text="J" angle="355" fontSize="25" zoomMax="1.6" zoomMin="0.1" />
+    </route>
+    <!--SIDS-->
+    <route name="MARICA6" displayMode="sid">
+        <activeStartRunways>02R, 02L</activeStartRunways>
+        <navaids>PP,MRC,AGUA,ADA</navaids>
+        <line start="SBRJ-RW02R" end="PP" />
+        <curve start="PP" end="15NM320@MRC" controlPoint="-22.710910,-43.152634" />
+        <line start="15NM320@MRC" end="MRC" text="PORTO5/MARICA6/MARICA7" />
+        <line start="MRC" end="-23.075285,-42.335123" text="MARICA6.ADA" />
+        <curve start="-23.075285,-42.335123" end="-23.047567,-42.256190" controlPoint="AGUA" />
+        <line start="-23.047567,-42.256190" end="ADA" />
+    </route>
+    <route name="MARICA7" displayMode="sid">
+        <activeStartRunways>02R, 02L</activeStartRunways>
+        <navaids>PP,MRC,RICAD, BOTOM, BONEL, PATIN, NAROB, MOTOB,</navaids>
+        <line start="SBRJ-RW02L" end="PP" />
+        <curve start="-22.897154,-42.955467" end="RICAD" controlPoint="MRC"  />
+        <line start="MRC" end="RICAD" text="MARICA7" />
+        <line start="RICAD" end="BOTOM" text="MARICA7.BOTOM" arrows="end" />
+        <line start="RICAD" end="BONEL" />
+        <line start="BONEL" end="PATIN" text="MARICA7.PATIN" arrows="end" />
+        <line start="RICAD" end="-23.1225,-43.1300" />
+        <line start="-23.1225,-43.1300" end="NAROB" />
+        <line start="NAROB" end="MOTOB" text="MARICA7.MOTOB" arrows="end" />   
+    </route>
+    <route name="PORTO5" displayMode="sid">
+        <activeStartRunways>02R, 02L, 20L, 20R </activeStartRunways>
+        <navaids>PP,MRC,PCX,ASGAT,ESORA,FIGOS,DONA,ERCY,POKA</navaids>
+        <line start="SBRJ-RW02L" end="PP" />
+        <line start="SBRJ-RW20L" end="-22.940622,-43.142513" text="MRC"/>
+        <line start="-22.940622,-43.142513" end="-22.959942,-42.938052" text="VISUAL TO MARICA" />
+        <curve start="-22.959942,-42.938052" end="-22.904744,-42.882221" controlPoint="MRC" />
+        <line start="-22.904744,-42.882221" end="PCX" text="PORTO5" />
+        <line start="PCX" end="ASGAT" text="PORTO5.ASGAT" arrows="end" />
+        <line start="PCX" end="ESORA" text="PORTO5.ESORA" arrows="end" />
+        <line start="PCX" end="FIGOS" text="PORTO5.FIGOS" arrows="end" />
+        <line start="PCX" end="DONA" text="PORTO5.DONA" arrows="end"/>
+        <line start="PCX" end="ERCY" text="PORTO5.ERCY" arrows="end" />   
+        <line start="PCX" end="POKA" text="PORTO5.POKA" arrows="end" />
+    </route>
+    <route name="RASA1" displayMode="sid">
+        <activeStartRunways>02R, 02L, 20L, 20R</activeStartRunways>
+        <navaids>IH, MOTOB, BOTOM, PATIN</navaids>
+        <line start="SBRJ-RW20R" end="-22.931251,-43.161347" stroke="15-5" />
+        <line start="-22.931251,-43.161347" end="-22.940622,-43.142513" stroke="15-5" arrows="end" />
+        <line start="-22.940622,-43.142513" end="IH" text="RASA1/2" arrows="end" />
+        <line start="-22.872322,-43.153434" end="-22.940622,-43.142513" stroke="15-5" text="RASA1/2" arrows="end" />
+        <line start="PP" end="-22.872322,-43.153434" stroke="15-5" arrows="end" />
+        <line start="IH" end="MOTOB" text="RASA1/2.MOTOB" arrows="end" />
+        <line start="IH" end="BONEL" />
+        <line start="BONEL" end="PATIN" text="RASA1/2.PATIN" arrows="end" />
+        <line start="IH" end="BOTOM" text="RASA1/2.BOTOM" arrows="end" />
+    </route>
+    <!--STARS-->
+    <route name="AFONSO1" displayMode="star">
+        <activeLandingRunways>02L, 02R, 20L, 20R</activeLandingRunways>
+        <navaids>CANO, GEDS, SCR, AFS, ETANO, TIBA, ATUM, BOTE, BUPI, PAKU</navaids>
+        <line start="CANO" end="GEDS" text="250-80kts; AFS1.CANO" />
+        <line start="GEDS" end="SCR" text="FL90-190 220-50kts" />
+        <loop navpoint="SCR" inboundHeading="75" length="7.33" width="2" right="true" minHeight="9000" />
+        <text position="-23.023756,-43.736616" text="FL90+, 220 kts. 2 min" />
+        <line start="SCR" end="AFS" text="FL50-90" arrows="end" />
+        <loop navpoint="AFS" inboundHeading="76" length="7.33" width="2" right="true" minHeight="5000" />
+        <text position="-22.924478,-43.381962" text="FL50-90, 220 kts. 2 min" />
+        <line start="ETANO" end="TIBA" />
+        <line start="TIBA" end="ATUM" text="FL90-190" />
+        <loop navpoint="ATUM" inboundHeading="43" length="7.33" width="2" right="true" minHeight="9000" />
+        <text position="-23.797466,-43.867645" text="FL90+, 220 kts. 2 min" />
+        <line start="ATUM" end="BOTE" text="250-80kts" />
+        <line start="BOTE" end="BUPI" text="220-50kts; FL120-90" />
+        <line start="BUPI" end="PAKU" />
+        <line start="PAKU" end="SCR" text="AFONSO1.ATUM" />
+    </route>
+    <route name="AFONSO2" displayMode="star">
+        <activeLandingRunways>02L, 02R, 20L, 20R</activeLandingRunways>
+        <navaids>CANO, ONIR, PAKU, JUDY, AFS</navaids>
+        <line start="CANO" end="ONIR" text="AFS.2" />
+        <line start="PAKU" end="JUDY" text="AFS.2" arrows="end" />
+        <line start="ONIR" end="JUDY" text="AFS.2" arrows="end" />
+        <line start="JUDY" end="AFS" text="AFS.2" arrows="end" />
+    </route>
+    <route name="CAXIAS1" displayMode="star">
+        <activeLandingRunways>02L, 02R, 20L, 20R</activeLandingRunways>
+        <navaids>CAX, GORDO, RIOH, MARO, AIZA, TIGO</navaids>
+        <line start="RIOH" end="GORDO" text="FL80-190" />
+        <line start="GORDO" end="MARO" text="FL80-120; max250kts" />
+        <line start="MARO" end="AIZA" text="FL80" />
+        <line start="AIZA" end="TIGO" text="FL75, max 220kts" />
+        <line start="TIGO" end="CAX" text="4000 feet" arrows="end" />
+    </route>
+    <!--Parkings-->
+    <!--IAPS-->
+    <route name="JLT10.RW20NDB" displayMode="star">
+        <activeLandingRunways>20L, 20R</activeLandingRunways>
+        <navaids>CAX, PP, YLA</navaids>
+        <line start="CAX" end="3.8NM115@CAX" />
+        <line start="-22.790344,-43.274879" end="9NM115@CAX" text="NDB.20 APPR" />
+        <curve start="9NM115@CAX" end="PP" controlPoint="-22.839273,-43.164752" />
+        <curve start="PP" end="-22.898540,-43.106323" controlPoint="-22.894707,-43.163387" />
+        <line start="-22.898540,-43.106323" end="MRC" text="MISSED APPROACH FOR 20" />
+        <line start="PP" end="SBRJ-RW02L" text="FINAL20" />
+    </route>
+    <route name="JLT9.RW20NDB" displayMode="star">
+        <activeLandingRunways>20L, 20R</activeLandingRunways>
+        <loop navpoint="YLA" inboundHeading="180" lenght="1" width="1" right="false" minHeight="MAX170" />
+        <line start="YLA" end="PP" text="JLT.9" />
+    </route>
+    <route name="JLT6.RW20NDB" displayMode="star">
+        <activeLandingRunways>20L, 20R</activeLandingRunways>
+        <line start="AFS" end="-22.817709,-43.257531" text="JLT.6 NDB" />
+        <curve start="-22.817709,-43.257531" end="-22.814028,-43.219663" controlPoint="-22.806541,-43.238280" />
+    </route>
+</routes>

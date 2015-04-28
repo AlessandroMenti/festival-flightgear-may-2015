@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Points -->
+    <addPoint code="AER52" point="S34°54'30'',W58°58'42''" />
+    <addPoint code="AER60" point="S35°36'54'',W58°41'12''" />
+    <addPoint code="AER61" point="S35°39'36'',W58°44'36''" />
+    <addPoint code="D183J" point="S34°59'24'',W58°31'20''" />
+    <addPoint code="EZE50" point="S34°56'06'',W58°59'36''" />
+    <addPoint code="EZE66" point="S35°25'42'',W58°27'18''" />
+    <!-- The coordinates of the EZE24 waypoint are wrong - define them correctly -->
+    <addPoint code="EZE24correct" point="18.6NM241@EZE" />
+    <!-- Approaches -->
+    <route name="ILS 11" displayMode="optional" color="255,242,0">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>ARSOT,(VOR)EZE</navaids>
+        <line start="ARSOT" end="10NM282.5@(VOR)EZE" />
+        <minAlt position="10NM282.5@(VOR)EZE" value="2.2" />
+        <line start="10NM282.5@(VOR)EZE" end="SAEZ-RW29" text="109°" arrows="end" />
+        <line start="(VOR)EZE" end="10NM274@(VOR)EZE" text="CAT C/D, 274°" arrows="end" />
+        <intercept start="10NM274@(VOR)EZE" startHeading="274" radius="0.75" direction="right" endHeading="101.7" end="10NM282.5@(VOR)EZE" />
+        <line start="(VOR)EZE" end="10NM277@(VOR)EZE" text="CAT A/B, 277°" arrows="end" />
+        <intercept start="10NM277@(VOR)EZE" startHeading="277" radius="0.48" direction="right" endHeading="101.7" end="10NM282.5@(VOR)EZE" />
+        <line start="SAEZ-RW11" end="2.8NM102@C" stroke="dashed" color="255,128,128" />
+        <line start="2.8NM102@C" end="4NM125@(VOR)EZE" stroke="dashed" color="255,128,128" text="125°" arrows="end" />
+        <minAlt position="2.8NM102@C" value="0.5" />
+        <minAlt position="4NM125@(VOR)EZE" value="3.0" />
+    </route>
+    <route name="ILS 35" displayMode="optional" color="255,242,0">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>GESTA</navaids>
+        <line start="GESTA" end="SAEZ-RW17" text="351°" arrows="end" />
+        <minAlt position="GESTA" value="5.0" />
+        <minAlt position="10NM162@(VOR)EZE" value="10.0" />
+        <line start="SAEZ-RW35" end="2.5NM344.5@A" stroke="dashed" color="255,128,128" />
+        <line start="2.5NM344.5@A" end="4NM039@A" stroke="dashed" color="255,128,128" text="090°" arrows="end" />
+        <minAlt position="2.5NM344.5@A" value="0.5" />
+        <minAlt position="4NM039@A" value="3.0" />
+    </route>
+    <!-- STARs -->
+    <route name="ASADA 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>ASADA,AER52,ARSOT</navaids>
+        <line start="ASADA" end="AER52" text="ASADA 6A, 084°" arrows="end" />
+        <line start="AER52" end="ARSOT" arrows="end" />
+    </route>
+    <route name="GBE 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>GBE,EZE50,AER52,ARSOT</navaids>
+        <line start="GBE" end="EZE50" text="GBE 6A, 339°" arrows="end" />
+        <line start="EZE50" end="AER52" arrows="end" />
+        <line start="AER52" end="ARSOT" arrows="end" />
+    </route>
+    <route name="PAGON 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>PAGON,VANAR,(VOR)ENO,ARSOT</navaids>
+        <line start="PAGON" end="VANAR" text="PAGON 6A, 192°" arrows="end" />
+        <line start="VANAR" end="(VOR)ENO" arrows="end" />
+        <line start="(VOR)ENO" end="ARSOT" arrows="end" />
+    </route>
+    <route name="SNT 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>(VOR)SNT,ARSOT</navaids>
+        <line start="(VOR)SNT" end="ARSOT" text="SNT 6A, 147°" arrows="end" />
+    </route>
+    <route name="VALOS 7A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>VALOS,GEBEM,EZE50,AER52,ARSOT</navaids>
+        <line start="VALOS" end="GEBEM" text="VALOS 7A, 038°" arrows="end" />
+        <line start="GEBEM" end="EZE50" text="034°" arrows="end" />
+        <line start="EZE50" end="AER52" arrows="end" />
+        <line start="AER52" end="ARSOT" arrows="end" />
+    </route>
+    <route name="KOVUK 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>KOVUK,(VOR)PTA,(VOR)EZE</navaids>
+        <line start="KOVUK" end="(VOR)PTA" text="KOVUK 6A, 312°" arrows="end" />
+        <loop navpoint="(VOR)PTA" inboundHeading="277" right="true" minHeight="12000" arrows="both" />
+        <line start="(VOR)PTA" end="(VOR)EZE" text="293°" arrows="end" />
+    </route>
+    <route name="KUKEN 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>KUKEN,(VOR)EZE</navaids>
+        <line start="KUKEN" end="(VOR)EZE" text="KUKEN 6A, 209°" arrows="end" />
+    </route>
+    <route name="PAPIX 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>PAPIX,(VOR)EZE</navaids>
+        <line start="PAPIX" end="(VOR)EZE" text="PAPIX 6A, 234°" arrows="end" />
+    </route>
+    <route name="SARGO 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>SARGO,ESLAN,(VOR)PTA,(VOR)EZE</navaids>
+        <line start="SARGO" end="ESLAN" text="SARGO 6A, 277°" arrows="end" />
+        <line start="ESLAN" end="(VOR)PTA" arrows="end" />
+        <loop navpoint="(VOR)PTA" inboundHeading="277" right="true" minHeight="12000" arrows="both" />
+        <line start="(VOR)PTA" end="(VOR)EZE" text="293°" arrows="end" />
+    </route>
+    <route name="TENIL 6A" displayMode="star">
+        <activeLandingRunways>11</activeLandingRunways>
+        <navaids>TENIL,(VOR)PTA,(VOR)EZE</navaids>
+        <line start="TENIL" end="(VOR)PTA" text="TENIL 6A, 001°" arrows="end" />
+        <loop navpoint="(VOR)PTA" inboundHeading="277" right="true" minHeight="12000" arrows="both" />
+        <line start="(VOR)PTA" end="(VOR)EZE" text="293°" arrows="end" />
+    </route>
+    <route name="ASADA 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>ASADA,AER60,EZE66,GESTA</navaids>
+        <line start="ASADA" end="AER60" text="ASADA 6B, 134°" arrows="end" />
+        <line start="AER60" end="EZE66" text="052°" arrows="end" />
+        <line start="EZE66" end="GESTA" text="008°" arrows="end" />
+        <loop navpoint="GESTA" inboundHeading="002" right="true" minHeight="5000" arrows="both" />
+    </route>
+    <route name="GBE 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>GBE,EZE66,GESTA</navaids>
+        <line start="GBE" end="EZE66" text="GBE 6B, 008°" arrows="end" />
+        <line start="EZE66" end="GESTA" text="008°" arrows="end" />
+        <loop navpoint="GESTA" inboundHeading="002" right="true" minHeight="5000" arrows="both" />
+    </route>
+    <route name="PAGON 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>PAGON,VANAR,(VOR)EZE</navaids>
+        <line start="PAGON" end="VANAR" text="PAGON 6B, 192°" arrows="end" />
+        <loop navpoint="VANAR" inboundHeading="137" right="true" minHeight="5000" arrows="both" />
+        <line start="VANAR" end="(VOR)EZE" text="166°" arrows="end" />
+    </route>
+    <route name="SNT 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>(VOR)SNT,VANAR,(VOR)EZE</navaids>
+        <line start="(VOR)SNT" end="VANAR" text="SNT 6B, 108°" arrows="end" />
+        <loop navpoint="VANAR" inboundHeading="137" right="true" minHeight="5000" arrows="both" />
+        <line start="VANAR" end="(VOR)EZE" text="166°" arrows="end" />
+    </route>
+    <route name="VALOS 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>VALOS,AER61,AER60,EZE66,GESTA</navaids>
+        <line start="VALOS" end="AER61" text="VALOS 6B, 118°" arrows="end" />
+        <line start="AER61" end="AER60" arrows="end" />
+        <line start="AER60" end="EZE66" text="052°" arrows="end" />
+        <line start="EZE66" end="GESTA" text="008°" arrows="end" />
+        <loop navpoint="GESTA" inboundHeading="002" right="true" minHeight="5000" arrows="both" />
+    </route>
+    <route name="KOVUK 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>KOVUK,(VOR)PTA,GESTA</navaids>
+        <line start="KOVUK" end="(VOR)PTA" text="KOVUK 6B, 312°" arrows="end" />
+        <loop navpoint="(VOR)PTA" inboundHeading="277" right="true" minHeight="12000" arrows="both" />
+        <line start="(VOR)PTA" end="GESTA" text="263°" arrows="end" />
+        <loop navpoint="GESTA" inboundHeading="002" right="true" minHeight="5000" arrows="both" />
+    </route>
+    <route name="KUKEN 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>KUKEN,(VOR)EZE</navaids>
+        <line start="KUKEN" end="(VOR)EZE" text="KUKEN 6B, 209°" arrows="end" />
+    </route>
+    <route name="PAPIX 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>PAPIX,(VOR)EZE</navaids>
+        <line start="PAPIX" end="(VOR)EZE" text="PAPIX 6B, 234°" arrows="end" />
+    </route>
+    <route name="SARGO 6B" displayMode="star">
+        <activeLandingRunways>35</activeLandingRunways>
+        <navaids>SARGO,ESLAN,(VOR)PTA,GESTA</navaids>
+        <line start="SARGO" end="ESLAN" text="SARGO 6B, 277°" arrows="end" />
+        <line start="ESLAN" end="(VOR)PTA" arrows="end" />
+        <loop navpoint="(VOR)PTA" inboundHeading="277" right="true" minHeight="12000" arrows="both" />
+        <line start="(VOR)PTA" end="GESTA" text="263°" arrows="end" />
+        <loop navpoint="GESTA" inboundHeading="002" right="true" minHeight="5000" arrows="both" />
+    </route>
+    <!-- SIDs -->
+    <route name="ATOVO 2A" displayMode="sid">
+        <activeStartRunways>11,29,17,35</activeStartRunways>
+        <navaids>EZE12,EZE,EZE19,EZE11,EZE10,EZE20,EZE26,ATOVO</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="3NM126@EZE12" text="126°" />
+        <intercept start="3NM126@EZE12" startHeading="126" radius="2" direction="right" endHeading="228" end="10NM138@EZE" />
+        <bow center="EZE" radius="10" startAngle="138" extentAngle="58" text="10 DME ARC EZE" />
+        <intercept start="10NM196@EZE" startHeading="288" radius="2" direction="right" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="SAEZ-RW17" end="5NM182@EZE" />
+        <line start="5NM182@EZE" end="7NM182@EZE" text="182°" />
+        <intercept start="7NM182@EZE" startHeading="182" radius="1.9" direction="right" endHeading="288" end="10NM196@EZE" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="225" extentAngle="54" text="10 DME ARC EZE" />
+        <intercept start="10NM225@EZE" startHeading="130" radius="2" direction="left" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept startTurn="5NM240@EZE11" startHeading="240" radius="2" direction="left" endHeading="148" end="10NM237@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="EZE" end="EZE19" text="005°" arrows="end" />
+        <line start="EZE19" end="EZE20" text="269°" arrows="end" />
+        <line start="EZE20" end="EZE26" arrows="end" />
+        <line start="EZE26" end="ATOVO" text="ATOVO 2A" arrows="end" />
+    </route>
+    <route name="BIVAM 2A" displayMode="sid">
+        <activeStartRunways>11,29,17,35</activeStartRunways>
+        <navaids>EZE12,EZE,EZE19,EZE11,EZE10,EZE20,BIVAM</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="3NM126@EZE12" text="126°" />
+        <intercept start="3NM126@EZE12" startHeading="126" radius="2" direction="right" endHeading="228" end="10NM138@EZE" />
+        <bow center="EZE" radius="10" startAngle="138" extentAngle="58" text="10 DME ARC EZE" />
+        <intercept start="10NM196@EZE" startHeading="288" radius="2" direction="right" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="SAEZ-RW17" end="5NM182@EZE" />
+        <line start="5NM182@EZE" end="7NM182@EZE" text="182°" />
+        <intercept start="7NM182@EZE" startHeading="182" radius="1.9" direction="right" endHeading="288" end="10NM196@EZE" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="225" extentAngle="54" text="10 DME ARC EZE" />
+        <intercept start="10NM225@EZE" startHeading="130" radius="2" direction="left" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept startTurn="5NM240@EZE11" startHeading="240" radius="2" direction="left" endHeading="148" end="10NM235@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="EZE" end="EZE19" text="005°" arrows="end" />
+        <line start="EZE19" end="EZE20" text="269°" arrows="end" />
+        <line start="EZE20" end="BIVAM" text="BIVAM 2A" arrows="end" />
+    </route>
+    <route name="LANDA 2A" displayMode="sid">
+        <activeStartRunways>11,29,17,35</activeStartRunways>
+        <navaids>EZE12,EZE,EZE19,EZE11,EZE10,LANDA</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="3NM126@EZE12" text="126°" />
+        <intercept start="3NM126@EZE12" startHeading="126" radius="2" direction="right" endHeading="228" end="10NM138@EZE" />
+        <bow center="EZE" radius="10" startAngle="138" extentAngle="58" text="10 DME ARC EZE" />
+        <intercept start="10NM196@EZE" startHeading="288" radius="2" direction="right" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="SAEZ-RW17" end="5NM182@EZE" />
+        <line start="5NM182@EZE" end="7NM182@EZE" text="182°" />
+        <intercept start="7NM182@EZE" startHeading="182" radius="1.9" direction="right" endHeading="288" end="10NM196@EZE" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="225" extentAngle="54" text="10 DME ARC EZE" />
+        <intercept start="10NM225@EZE" startHeading="130" radius="2" direction="left" endHeading="30" end="EZE" text="030°" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept startTurn="5NM240@EZE11" startHeading="240" radius="2" direction="left" endHeading="148" end="10NM235@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="EZE" end="EZE19" text="005°" arrows="end" />
+        <line start="EZE19" end="LANDA" text="LANDA 2A" arrows="end" />
+    </route>
+    <route name="GBE6" displayMode="sid">
+        <activeStartRunways>11,29,17,35</activeStartRunways>
+        <navaids>EZE12,EZE11,EZE10,D183J,GBE</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="3NM126@EZE12" text="126°" />
+        <intercept start="3NM126@EZE12" startHeading="126" radius="2" direction="right" endHeading="228" end="10NM138@EZE" />
+        <bow center="EZE" radius="10" startAngle="138" extentAngle="38.3" text="10 DME ARC EZE" arrows="end" />
+        <line start="SAEZ-RW17" end="3NM181@EZE" />
+        <line start="3NM181@EZE" end="D183J" text="183°" arrows="end" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="279" extentAngle="-102.5" text="10 DME ARC EZE" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept startTurn="5NM240@EZE11" startHeading="240" radius="2" direction="left" endHeading="148" end="10NM235@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="D183J" end="GBE" text="GBE6, 183°" arrows="end" />
+    </route>
+    <route name="PTA6A" displayMode="sid">
+        <activeStartRunways>29,17,35</activeStartRunways>
+        <navaids>EZE11,EZE10,D183J,(VOR)PTA,EZE18,KUKEN,PAPIX,DORVO,ESLAN,KOVUK,(VOR)PDI,TEDAR</navaids>
+        <line start="SAEZ-RW17" end="3NM181@EZE" />
+        <line start="3NM181@EZE" end="D183J" text="183°" arrows="end" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="279" extentAngle="-102.5" text="10 DME ARC EZE" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept startTurn="5NM240@EZE11" startHeading="240" radius="2" direction="left" endHeading="148" end="10NM235@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="D183J" end="(VOR)PTA" text="PTA6A, 092°" arrows="end" />
+        <line start="(VOR)PTA" end="EZE18" stroke="dashed" text="348°" arrows="end" />
+        <line start="EZE18" end="KUKEN" stroke="dashed" arrows="end" />
+        <line start="EZE18" end="PAPIX" stroke="dashed" arrows="end" />
+        <line start="(VOR)PTA" end="DORVO" stroke="dashed" text="056°" arrows="end" />
+        <line start="(VOR)PTA" end="ESLAN" stroke="dashed" text="097°" arrows="end" />
+        <line start="(VOR)PTA" end="KOVUK" stroke="dashed" text="132°" arrows="end" />
+        <line start="KOVUK" end="(VOR)PDI" arrows="end" />
+        <line start="(VOR)PTA" end="TEDAR" stroke="dashed" text="169°" arrows="end" />
+    </route>
+    <route name="PTA6B" displayMode="sid">
+        <activeStartRunways>11</activeStartRunways>
+        <navaids>EZE12,(VOR)PTA,EZE18,KUKEN,PAPIX,DORVO,ESLAN,KOVUK,(VOR)PDI,TEDAR</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="(VOR)PTA" text="PTA6B, 110°" arrows="end" />
+        <line start="(VOR)PTA" end="EZE18" stroke="dashed" text="348°" arrows="end" />
+        <line start="EZE18" end="KUKEN" stroke="dashed" arrows="end" />
+        <line start="EZE18" end="PAPIX" stroke="dashed" arrows="end" />
+        <line start="(VOR)PTA" end="DORVO" stroke="dashed" text="056°" arrows="end" />
+        <line start="(VOR)PTA" end="ESLAN" stroke="dashed" text="097°" arrows="end" />
+        <line start="(VOR)PTA" end="KOVUK" stroke="dashed" text="132°" arrows="end" />
+        <line start="KOVUK" end="(VOR)PDI" arrows="end" />
+        <line start="(VOR)PTA" end="TEDAR" stroke="dashed" text="169°" arrows="end" />
+    </route>
+    <route name="TORUL 1" displayMode="sid">
+        <activeStartRunways>11,29,17,35</activeStartRunways>
+        <navaids>EZE10,D183J,EZE11,EZE12,EZE24correct,GEBEM,TORUL,EZE15,ASADA,URINO</navaids>
+        <intercept start="SAEZ-RW11" startHeading="110" radius="1.5" direction="right" endHeading="133" end="2.5NM118@EZE" />
+        <intercept start="2.5NM118@EZE" startHeading="133" radius="1.5" direction="left" endHeading="126" end="EZE12" />
+        <line start="EZE12" end="3NM126@EZE12" text="126°" />
+        <intercept start="3NM126@EZE12" startHeading="126" radius="2" direction="right" endHeading="228" end="10NM138@EZE" />
+        <bow center="EZE" radius="10" startAngle="138" extentAngle="38.3" text="10 DME ARC EZE" arrows="end" />
+        <line start="SAEZ-RW17" end="3NM181@EZE" />
+        <line start="3NM181@EZE" end="D183J" text="183°" arrows="end" />
+        <line start="SAEZ-RW29" end="EZE11" />
+        <bow center="EZE" radius="10" startAngle="245.9" extentAngle="33.1" text="10 DME ARC EZE" />
+        <intercept startTurn="10NM246@EZE" startHeading="156" radius="2" direction="right" endHeading="241" end="EZE24correct" text="241°" arrows="end" />
+        <line start="EZE11" end="5NM240@EZE11" text="240°" />
+        <intercept start="5NM240@EZE11" startHeading="240" radius="0.8" direction="left" endHeading="156" end="10NM246@EZE" />
+        <line start="SAEZ-RW35" end="EZE10" />
+        <line start="EZE10" end="7NM275@EZE10" text="275°" />
+        <intercept startTurn="7NM275@EZE10" startHeading="275" radius="2" direction="left" endHeading="190" end="10NM279@EZE" />
+        <line start="D183J" end="EZE24correct" text="274°" arrows="end" />
+        <line start="EZE24correct" end="GEBEM" arrows="end" />
+        <line start="GEBEM" end="TORUL" text="TORUL 1" arrows="end" />
+        <line start="EZE24correct" end="EZE15" stroke="dashed" arrows="end" />
+        <line start="EZE15" end="ASADA" stroke="dashed" arrows="end" />
+        <line start="EZE15" end="URINO" stroke="dashed" arrows="end" />
+    </route>
+    <!-- Ground network -->
+</routes>

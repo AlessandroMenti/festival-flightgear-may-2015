@@ -4,7 +4,7 @@ The Festival of FlightGear (May 2015) ground network and route files
 Installation instructions
 -------------------------
 
-OpenRadar route files:
+* OpenRadar route files: *
 
 1. Download and install [OpenRadar](http://wiki.flightgear.org/OpenRadar).
 2. Put `openradar/SAEZ.xml` in `<directory where you uncompressed
@@ -12,7 +12,7 @@ OpenRadar route files:
 3. Put `openradar/SBRJ.xml` in `<directory where you uncompressed
    OpenRadar>/data/routes/SBRJ/SBRJ.xml`.
 
-Ground networks:
+* Ground networks: *
 
 1. Put `groundnets/SAEZ.groundnet.xml` in
    `$FG_SCENERY/Airports/S/A/E/SAEZ.groundnet.xml`.

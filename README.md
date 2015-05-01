@@ -1,7 +1,8 @@
 The Festival of FlightGear (May 2015) ground network and route files
 ====================================================================
 
-*Installation instructions*
+Installation instructions
+-------------------------
 
 OpenRadar route files:
 

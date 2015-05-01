@@ -16,8 +16,8 @@ Ground networks:
 
 1. Put `groundnets/SAEZ.groundnet.xml` in
    `$FG_SCENERY/Airports/S/A/E/SAEZ.groundnet.xml`.
-2. Put `groundnets/SBRJ.groundnet.xml` in
-   `$FG_SCENERY/Airports/S/A/E/SAEZ.groundnet.xml`.
+2. Put `groundnets/SBGL.groundnet.xml` in
+   `$FG_SCENERY/Airports/S/B/G/SBGL.groundnet.xml`.
 
 License
 --------
